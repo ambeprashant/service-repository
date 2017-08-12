@@ -1,0 +1,8 @@
+com/demo/spring/web/controller/UserController.class
+com/demo/spring/service/UserService.class
+com/vdotnode/performanceproduct/domain/BaseModel.class
+com/demo/spring/domain/User.class
+com/demo/spring/config/AppInitializer.class
+com/demo/spring/service/impl/UserServiceImpl.class
+com/demo/spring/repositories/UserRepository.class
+com/demo/spring/config/AppConfig.class
