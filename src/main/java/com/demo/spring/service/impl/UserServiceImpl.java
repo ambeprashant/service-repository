@@ -30,4 +30,38 @@ public class UserServiceImpl implements UserService{
 		return null;
 	}
 
+	@Override
+	public User createUser(User user) {
+		User saveUser = null;
+		if (null != user) {
+
+			logger.debug(" User created");
+			saveUser = this.userRepository.save(user);
+		}
+
+		return saveUser;
+	}
+
+	@Override
+	public User deleteUserById(Long id) {
+		if (null != id) {
+			logger.debug("Delete User By id");
+			this.userRepository.delete(id);
+		}
+		logger.debug("NOT found User");
+		return null;
+	}
+
+	@Override
+	public User updateUser(User user) {
+		if (null != user) {
+			logger.info("update User By Id");
+			return this.userRepository.save(user);
+		}
+		logger.error("NOT found User");
+		return null;
+	}
+
+	
+
 }

@@ -10,4 +10,12 @@ public interface UserService {
 
 	public User findUserById(Long id);
 
+	public User createUser(User user);
+	
+
+	
+	public User deleteUserById(Long id);
+	
+	public User updateUser(User user);
+	
 }
